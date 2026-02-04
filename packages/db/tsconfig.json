@@ -1,0 +1,3 @@
+{
+	"extends": "@birthday-reminder-service/shared/ts-base.json"
+}

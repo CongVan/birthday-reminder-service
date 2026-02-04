@@ -1,0 +1,25 @@
+{
+	"name": "@birthday-reminder-service/shared",
+	"version": "1.0.0",
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./ts-base.json": "./ts-base.json",
+		"./biome-common.json": "./biome-common.json",
+		"./jest-base.config.cjs": "./jest-base.config.cjs"
+	},
+	"scripts": {
+		"test": "jest --coverage"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"dependencies": {
+		"date-fns": "^4.1.0",
+		"date-fns-tz": "^3.2.0",
+		"zod": "catalog:"
+	},
+	"devDependencies": {
+		"@types/jest": "catalog:"
+	}
+}

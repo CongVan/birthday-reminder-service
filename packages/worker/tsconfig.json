@@ -1,0 +1,10 @@
+{
+	"extends": "@birthday-reminder-service/shared/ts-base.json",
+	"include": ["src/**/*"],
+	"exclude": ["node_modules", "dist"],
+	"compilerOptions": {
+		"paths": {
+			"@/*": ["./src/*"]
+		}
+	}
+}

@@ -1,0 +1,15 @@
+FROM node:24-alpine
+
+# Install pnpm and common dev tools
+RUN npm install -g pnpm && \
+    apk add --no-cache libc6-compat
+
+WORKDIR /app
+
+# Copy source
+COPY . .
+
+# Install dependencies
+RUN pnpm install
+
+CMD pnpm --filter @birthday-reminder-service/worker dev

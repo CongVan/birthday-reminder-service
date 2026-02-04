@@ -1,0 +1,15 @@
+FROM node:24-alpine
+
+# Install pnpm and common dev tools
+RUN npm install -g pnpm && apk add libc6-compat
+
+WORKDIR /app
+
+# Copy source (respecting .dockerignore)
+COPY . .
+
+# Install dependencies in the image
+RUN pnpm install
+
+EXPOSE 8080
+CMD pnpm --filter @birthday-reminder-service/api dev

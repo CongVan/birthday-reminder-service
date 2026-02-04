@@ -1,0 +1,22 @@
+{
+	"name": "@birthday-reminder-service/worker",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"main": "dist/index.js",
+	"scripts": {
+		"dev": "tsx watch src/index.ts",
+		"start": "tsx src/index.ts",
+		"test": "jest --coverage"
+	},
+	"dependencies": {
+		"bullmq": "catalog:",
+		"ioredis": "catalog:",
+		"mongoose": "catalog:",
+		"@birthday-reminder-service/db": "workspace:*",
+		"@birthday-reminder-service/shared": "workspace:*"
+	},
+	"devDependencies": {
+		"@types/jest": "catalog:"
+	}
+}

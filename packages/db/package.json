@@ -1,0 +1,19 @@
+{
+	"name": "@birthday-reminder-service/db",
+	"version": "1.0.0",
+	"description": "",
+	"type": "module",
+	"main": "./src/index.ts",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"mongoose": "catalog:",
+		"zod": "catalog:",
+		"@birthday-reminder-service/shared": "workspace:*"
+	}
+}
